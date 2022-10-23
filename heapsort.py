@@ -21,7 +21,6 @@ def heapsort(arr):
     l = len(arr)
     for i in range(l//2-1, -1, -1):
         max_heapify(arr, l, i)
-        arr[i], arr[0] = arr[0], arr[i]
 
     for i in range(l-1, 0, -1): # extract elements
         arr[i], arr[0] = arr[0], arr[i]
@@ -29,7 +28,7 @@ def heapsort(arr):
 
 
 if __name__=="__main__":
-    test_arr = [10,5,4,7,2,3,8]
+    test_arr = [10,5,4,20,7,2,3,8]
     print(f"original array: {test_arr}")
     heapsort(test_arr)
     print(f"Sorted array: {test_arr}")

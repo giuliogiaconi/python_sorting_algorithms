@@ -16,7 +16,6 @@ def partition(array, low, high):
 
     return i+1
 
-    quick_sort(array, )
     
 def quick_sort(array, low, high):
     if low < high:
@@ -26,7 +25,7 @@ def quick_sort(array, low, high):
         quick_sort(array, part_index+1, high)
 
 if __name__ == '__main__':
-    array = [10, 7, 8, 9, 1, 5]
+    array = [10, 7, 8, 9, 1, 5, 20, 15]
     quick_sort(array, 0, len(array) - 1)
     
     print(f'Sorted array: {array}')
