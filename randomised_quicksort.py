@@ -1,5 +1,6 @@
 import random
 
+
 def partition(array, low, high):
     pivot_index = random.randrange(low, high+1)
     array[pivot_index], array[high] = array[high], array[pivot_index]
